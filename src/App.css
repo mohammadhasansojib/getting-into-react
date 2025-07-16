@@ -18,7 +18,8 @@
         border-radius: .8rem;
         cursor: pointer;
     }
-    input{
+    input,
+    textarea{
         border: 1px solid gray;
     }
 }
