@@ -44,7 +44,11 @@ const Form = () => {
 
 
     return (
-        <form action="" onSubmit={handleSubmit}>
+        <form action="" onSubmit={handleSubmit} style={{
+            border: "2px solid gray",
+            padding: "1rem",
+            margin: "1.5rem 0"
+        }}>
             <textarea 
             disabled={status == `submitting`}
             onChange={handleTextChange}
