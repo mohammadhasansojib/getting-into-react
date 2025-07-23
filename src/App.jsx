@@ -2,6 +2,7 @@ import './App.css';
 import {Fragment} from 'react';
 import Manage1 from './Manage1';
 import UseEffect from './UseEffect';
+import UseReducer from './UseReducer';
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
     <Fragment>
       <Manage1 />
       <UseEffect />
+      <UseReducer />
     </Fragment>
   )
 }

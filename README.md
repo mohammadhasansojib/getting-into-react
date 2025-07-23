@@ -32,3 +32,28 @@
         //run on mount & depending on depencies
     }, [count])
     ```
+
+## useReducer
+**Date:** `23/7/25`
+
+- For handling simple state logic `useState` is better than `useReducer`, but is the state logic is complex and want to separate the state logic from the component or even from the file to reduce the code and increase the readibility then `useReducer` is better option.
+
+- There are three main things in `useReducer`
+    - `reducer funtion` (which handle the state logic)
+        ```js
+        const reducer = (state, action) => {
+            // State logic handled from here
+        }
+        ```
+    - `dispatcher` (which dispatch an object to the reducer function from the component)
+        ```js
+        const handleEvent = ({info}) => {
+            dispatch({type: 'myType', info: info})
+        }
+        ```
+    - `useReducer` initialization (which takes the reducer function and initial state value)
+        ```js
+        const MyComp = () => {
+            const [tasks, dispatch] = useReducer(reducer, initialValue);
+        }
+        ```
